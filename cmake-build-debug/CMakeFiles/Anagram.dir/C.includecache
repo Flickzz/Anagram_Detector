@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c
+stdio.h
+-
+fileIO.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
+utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
+utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/main.c
+stdio.h
+-
+stdlib.h
+-
+fileIO.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
+utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+sortStrings.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.h
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.h
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+
