@@ -11,6 +11,33 @@ void swap(char **array, int i, int j) {
     array[j] = temp;
 }
 
+/*FIX BUGS WITH LOWERCASE*/
+int compare(char *sentence1, char *sentence2)
+{
+    //Copies the sentences onto a charachter array that we can make lowercase
+    char *sentence1_lowercase = sentence1;
+    char *sentence2_lowercase = sentence2;
+    /*
+    strcpy(sentence1_lowercase, sentence1);
+    strcpy(sentence2_lowercase, sentence2);
+*/
+    //Make the Copies Lower case
+    for(int i = 0; sentence1_lowercase[i] != '\0'; i++)
+    {
+        if(sentence1_lowercase[i] >= 'A' && sentence1_lowercase[i] <= 'Z')
+        {
+            sentence1_lowercase[i]= sentence1_lowercase[i] - 'A' + 'a';
+        }
+    }
+    for(int i = 0; sentence2_lowercase[i] != '\0'; i++)
+    {
+        if(sentence2_lowercase[i] >= 'A' && sentence2_lowercase[i] <= 'Z')
+        {
+            sentence2_lowercase[i]= sentence2_lowercase[i] - 'A' + 'a';
+        }
+    }
+    return strcmp(sentence1_lowercase, sentence2_lowercase);
+}
 
 int partition(char **array, int first, int last) {
     swap(array, first, (first + last) / 2); // swap middle value into first pos
@@ -19,9 +46,9 @@ int partition(char **array, int first, int last) {
     int index1 = first + 1; // index of first unknown value
     int index2 = last;    // index of last unknown value
     while (index1 <= index2) { // while some values still unknown
-        if (strcmp(array[index1],pivot)<0)
+        if (compare(array[index1],pivot)<0)
             index1++;
-        else if (strcmp(array[index2], pivot)>=0)
+        else if (compare(array[index2], pivot)>0)
             index2--;
         else {
             swap(array, index1, index2);
