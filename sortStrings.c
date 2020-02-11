@@ -5,6 +5,7 @@
 #include "sortStrings.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /*Swaps sentences within a character array*/
 void swap(char **array, int i, int j) {
     char *temp = array[i];
@@ -13,31 +14,28 @@ void swap(char **array, int i, int j) {
 }
 
 
-int compare(char *sentence1, char *sentence2)
-{
+int compare(char *sentence1, char *sentence2) {
     //Copies the sentences onto a charachter array that we can make lowercase
-    char *sentence1_lowercase = malloc((strlen(sentence1)+1) * sizeof(char));
-    char *sentence2_lowercase = malloc((strlen(sentence2)+1) * sizeof(char));
+    char *sentence1_lowercase = malloc((strlen(sentence1) + 1) * sizeof(char));
+    char *sentence2_lowercase = malloc((strlen(sentence2) + 1) * sizeof(char));
 
     strcpy(sentence1_lowercase, sentence1);
     strcpy(sentence2_lowercase, sentence2);
 
     //Make the Copies Lower case
-    for(int i = 0; sentence1_lowercase[i] != '\0'; i++)
-    {
-        if(sentence1_lowercase[i] >= 'A' && sentence1_lowercase[i] <= 'Z')
-        {
-            sentence1_lowercase[i]= sentence1_lowercase[i] - 'A' + 'a';
+    for (int i = 0; sentence1_lowercase[i] != '\0'; i++) {
+        if (sentence1_lowercase[i] >= 'A' && sentence1_lowercase[i] <= 'Z') {
+            sentence1_lowercase[i] = sentence1_lowercase[i] - 'A' + 'a';
         }
     }
-    for(int i = 0; sentence2_lowercase[i] != '\0'; i++)
-    {
-        if(sentence2_lowercase[i] >= 'A' && sentence2_lowercase[i] <= 'Z')
-        {
-            sentence2_lowercase[i]= sentence2_lowercase[i] - 'A' + 'a';
+    for (int i = 0; sentence2_lowercase[i] != '\0'; i++) {
+        if (sentence2_lowercase[i] >= 'A' && sentence2_lowercase[i] <= 'Z') {
+            sentence2_lowercase[i] = sentence2_lowercase[i] - 'A' + 'a';
         }
     }
+    //Compare strings in their lower charachter form
     int comparison = strcmp(sentence1_lowercase, sentence2_lowercase);
+    //Free Memory
     free(sentence1_lowercase);
     free(sentence2_lowercase);
     return comparison;
@@ -50,9 +48,9 @@ int partition(char **array, int first, int last) {
     int index1 = first + 1; // index of first unknown value
     int index2 = last;    // index of last unknown value
     while (index1 <= index2) { // while some values still unknown
-        if (compare(array[index1],pivot)<0)
+        if (compare(array[index1], pivot) < 0)
             index1++;
-        else if (compare(array[index2], pivot)>0)
+        else if (compare(array[index2], pivot) > 0)
             index2--;
         else {
             swap(array, index1, index2);
@@ -74,5 +72,5 @@ void quickSort(char **array, int first, int last) {
         quickSort(array, first, pivotIndex - 1);
         quickSort(array, pivotIndex + 1, last);
     }
- }
+}
 
