@@ -6,6 +6,7 @@
 
 int main() {
 
+    /*FIX INPUT FILE, IT LOOKS HORRIBLE*/
     char anagram[MAX_LINE_LEN][MAX_SENTENCE_LEN];
     for (int i = 0; i < MAX_LINE_LEN; i++)
         for (int j = 0; j < MAX_SENTENCE_LEN; j++)
