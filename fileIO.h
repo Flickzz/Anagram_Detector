@@ -6,6 +6,6 @@
 #ifndef ANAGRAM_FILEIO_H
 #define ANAGRAM_FILEIO_H
 
-int readAnagrams(char inputAnagrams[][MAX_SENTENCE_LEN]);
+int readAnagrams(char **inputAnagrams);
 
 #endif //ANAGRAM_FILEIO_H

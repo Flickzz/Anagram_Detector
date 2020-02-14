@@ -5,27 +5,18 @@
 #include "sortStrings.h"
 
 int main() {
-
-    /*FIX INPUT FILE, IT LOOKS HORRIBLE*/
-    char anagram[MAX_LINE_LEN][MAX_SENTENCE_LEN];
-    for (int i = 0; i < MAX_LINE_LEN; i++)
-        for (int j = 0; j < MAX_SENTENCE_LEN; j++)
-            anagram[i][j] = '\0';
-    /*Reads the input file into a 2D array*/
-    int lineLen = readAnagrams(anagram);
-
-    char **anagram2 = (char **) malloc(sizeof(char *) * lineLen);
-
-    for (int i = 0; i < MAX_LINE_LEN; i++)
-        anagram2[i] = (char *) malloc(sizeof(char) * MAX_SENTENCE_LEN);
-
-    for (int i = 0; i < lineLen; i++) {
-        anagram2[i] = anagram[i];
+    char **anagram2 = (char**) calloc(MAX_LINE_LEN, sizeof(char*));
+    for ( int i = 0; i < 14; i++ )
+    {
+        anagram2[i] = (char*) calloc(MAX_SENTENCE_LEN, sizeof(char));
     }
+    int lineLen = readAnagrams(anagram2);
+
     /*Sorts File*/
-    quickSort(anagram2, 0, lineLen - 1);
+    quickSort(anagram2, 0, lineLen-1);
+    /*Prints Contents of the 2d array*/
     for (int i = 0; i < lineLen; i++) {
-        printf("%s", anagram2[i]);
+        printf("%s\n", anagram2[i]);
     }
     return 0;
 }

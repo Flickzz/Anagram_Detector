@@ -1,6 +1,3 @@
-//
-// Created by Ashraf Ali on 05/02/2020.
-//
 #include <string.h>
 #include "sortStrings.h"
 #include <stdio.h>
@@ -73,4 +70,3 @@ void quickSort(char **array, int first, int last) {
         quickSort(array, pivotIndex + 1, last);
     }
 }
-
