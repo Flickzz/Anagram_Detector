@@ -2,6 +2,7 @@
 #include "sortStrings.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /*Swaps sentences within a character array*/
 void swap(char **array, int i, int j) {
@@ -21,14 +22,10 @@ int compare(char *sentence1, char *sentence2) {
 
     //Make the Copies Lower case
     for (int i = 0; sentence1_lowercase[i] != '\0'; i++) {
-        if (sentence1_lowercase[i] >= 'A' && sentence1_lowercase[i] <= 'Z') {
-            sentence1_lowercase[i] = sentence1_lowercase[i] - 'A' + 'a';
-        }
+        tolower(sentence1_lowercase);
     }
     for (int i = 0; sentence2_lowercase[i] != '\0'; i++) {
-        if (sentence2_lowercase[i] >= 'A' && sentence2_lowercase[i] <= 'Z') {
-            sentence2_lowercase[i] = sentence2_lowercase[i] - 'A' + 'a';
-        }
+        tolower(sentence2_lowercase);
     }
     //Compare strings in their lower charachter form
     int comparison = strcmp(sentence1_lowercase, sentence2_lowercase);

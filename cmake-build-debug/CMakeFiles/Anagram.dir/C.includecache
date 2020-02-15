@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.c
+string.h
+-
+sortStrings.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.h
 stdio.h
 -
-fileIO.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
-utilities.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+stdlib.h
+-
+ctype.h
+-
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
-utilities.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
-
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.h
 

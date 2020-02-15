@@ -80,9 +80,6 @@
 		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/garbage.cpp">
-			<Option target="Anagram"/>
-		</Unit>
 		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/main.c">
 			<Option target="Anagram"/>
 		</Unit>
