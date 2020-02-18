@@ -1,0 +1,8 @@
+//
+// Created by Ashraf Ali on 18/02/2020.
+//
+
+#ifndef ANAGRAM_ANAGRAMSOLVER_H
+#define ANAGRAM_ANAGRAMSOLVER_H
+
+#endif //ANAGRAM_ANAGRAMSOLVER_H

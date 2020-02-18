@@ -3,4 +3,4 @@ project(Anagram C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Anagram main.c fileIO.h fileIO.c utilities.h sortStrings.h sortStrings.c)
+add_executable(Anagram main.c fileIO.h fileIO.c utilities.h sortStrings.h sortStrings.c anagramSolver.h)
