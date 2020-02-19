@@ -1,6 +1,5 @@
 #include <string.h>
 #include "sortStrings.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 
