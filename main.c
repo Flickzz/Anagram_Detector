@@ -4,10 +4,10 @@
 #include "utilities.h"
 #include "sortStrings.h"
 #include "anagramSolver.h"
-int main() {
+int main(void) {
 
     char **anagram2 = (char **) calloc(MAX_LINE_LEN, sizeof(char *));
-    for (int i = 0; i < 14; i++) {
+    for (int i = 0; i < MAX_LINE_LEN; i++) {
         anagram2[i] = (char *) calloc(MAX_SENTENCE_LEN, sizeof(char));
     }
     int lineLen = readAnagrams(anagram2);

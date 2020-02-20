@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "Anagram.exe"
   "Anagram.exe.manifest"
   "Anagram.pdb"
+  "CMakeFiles/Anagram.dir/anagramSolver.c.obj"
   "CMakeFiles/Anagram.dir/fileIO.c.obj"
   "CMakeFiles/Anagram.dir/main.c.obj"
   "CMakeFiles/Anagram.dir/sortStrings.c.obj"

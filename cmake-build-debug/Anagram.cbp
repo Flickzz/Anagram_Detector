@@ -74,6 +74,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.c">
+			<Option target="Anagram"/>
+		</Unit>
 		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h">
 			<Option target="Anagram"/>
 		</Unit>

@@ -122,6 +122,33 @@ Anagram/fast:
 	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/build
 .PHONY : Anagram/fast
 
+anagramSolver.obj: anagramSolver.c.obj
+
+.PHONY : anagramSolver.obj
+
+# target to build an object file
+anagramSolver.c.obj:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/anagramSolver.c.obj
+.PHONY : anagramSolver.c.obj
+
+anagramSolver.i: anagramSolver.c.i
+
+.PHONY : anagramSolver.i
+
+# target to preprocess a source file
+anagramSolver.c.i:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/anagramSolver.c.i
+.PHONY : anagramSolver.c.i
+
+anagramSolver.s: anagramSolver.c.s
+
+.PHONY : anagramSolver.s
+
+# target to generate assembly for a file
+anagramSolver.c.s:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/anagramSolver.c.s
+.PHONY : anagramSolver.c.s
+
 fileIO.obj: fileIO.c.obj
 
 .PHONY : fileIO.obj
@@ -212,6 +239,9 @@ help:
 	@echo ... Anagram
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... anagramSolver.obj
+	@echo ... anagramSolver.i
+	@echo ... anagramSolver.s
 	@echo ... fileIO.obj
 	@echo ... fileIO.i
 	@echo ... fileIO.s
