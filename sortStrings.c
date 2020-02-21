@@ -8,31 +8,6 @@ void swap(char **array, int i, int j) {
     array[j] = temp;
 }
 
-/*USE STRCMP I INSTEAD OF THIS DOGSHIT CODE YOU JUST WROTE*/
-/*
-int compare(char *sentence1, char *sentence2) {
-    //Copies the sentences onto a charachter array that we can make lowercase
-    char *sentence1_lowercase = malloc((strlen(sentence1) + 1) * sizeof(char));
-    char *sentence2_lowercase = malloc((strlen(sentence2) + 1) * sizeof(char));
-
-    strcpy(sentence1_lowercase, sentence1);
-    strcpy(sentence2_lowercase, sentence2);
-
-    //Make the Copies Lower case
-    for (int i = 0; sentence1_lowercase[i] != '\0'; i++) {
-        tolower(sentence1_lowercase);
-    }
-    for (int i = 0; sentence2_lowercase[i] != '\0'; i++) {
-        tolower(sentence2_lowercase);
-    }
-    //Compare strings in their lower charachter form
-    int comparison = strcmp(sentence1_lowercase, sentence2_lowercase);
-    //Free Memory
-    free(sentence1_lowercase);
-    free(sentence2_lowercase);
-    return comparison;
-}*/
-
 int partition(char **array, int first, int last) {
     swap(array, first, (first + last) / 2); // swap middle value into first position
     char *pivot = array[first];     // remember pivot
