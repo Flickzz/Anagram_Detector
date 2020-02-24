@@ -1,0 +1,16 @@
+The sorted list of strings is as follows:
+Act
+cat
+Computer science
+cuddle
+duck
+Hey there!
+I am Lord Voldemort
+Leonardo da Vinci! The Mona Lisa!
+O, Draconian devil! Oh, lame saint!
+Old Immortal dovers
+Software engineering
+tac
+Tom Marvolo Riddle
+UCD
+

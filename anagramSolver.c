@@ -3,6 +3,10 @@
 //
 #include "anagramSolver.h"
 #include <ctype.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "stdlib.h"
+#include "utilities.h"
 
 
 /*Returns an integer stating how close to being an anagram one sentence is to another*/
@@ -27,26 +31,11 @@ int isAnagram(char *sentence1, char *sentence2) {
         }
     }
 
-    /*Counts how far they are from each other, 0 means they are anagrams of eachother*/
+    /*Counts how far they are from each other, 0 means they are anagrams of each other*/
     int frequencyDistance = 0;
     for (int i = 0; i < 26; i++) {
         frequencyDistance += sentence1CharacterFrequency[i] - sentence2CharacterFrequency[i];
     }
 
     return frequencyDistance;
-}
-
-char **listOfAnagrams(char *anagrams, int lineLen)
-{
-    for(int i = 0; i<lineLen; i++)
-    {
-        for(int j = i; j< lineLen; j++)
-        {
-            if(isAnagram(anagrams[i],anagrams[j]) == 1)
-            {
-
-            }
-        }
-
-    }
 }

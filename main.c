@@ -4,19 +4,18 @@
 #include "utilities.h"
 #include "sortStrings.h"
 #include "anagramSolver.h"
+
 int main(void) {
 
-    char **anagram2 = (char **) calloc(MAX_LINE_LEN, sizeof(char *));
+    char **anagram = (char **) calloc(MAX_LINE_LEN, sizeof(char *));
     for (int i = 0; i < MAX_LINE_LEN; i++) {
-        anagram2[i] = (char *) calloc(MAX_SENTENCE_LEN, sizeof(char));
+        anagram[i] = (char *) calloc(MAX_SENTENCE_LEN, sizeof(char));
     }
-    int lineLen = readAnagrams(anagram2);
+    int lineLen = readAnagrams(anagram);
 
     /*Sorts File*/
-    quickSort(anagram2, 0, lineLen - 1);
-    /*Prints Contents of the 2d array*/
-    for (int i = 0; i < lineLen; i++) {
-        printf("%s\n", anagram2[i]);
-    }
+    quickSort(anagram, 0, lineLen - 1);
+    /*Outputs Sorted string to the output.txt*/
+    outputSortedSentences(anagram, lineLen);
     return 0;
 }
