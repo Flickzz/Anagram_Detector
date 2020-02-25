@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h
+
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c
 stdio.h
+-
+stdbool.h
 -
 fileIO.h
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
 utilities.h
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+anagramSolver.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h
 
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
 utilities.h

@@ -14,3 +14,9 @@ tac
 Tom Marvolo Riddle
 UCD
 
+Anagram 1: "Act" "cat" "tac" 
+Anagram 2: "I am Lord Voldemort" "Tom Marvolo Riddle" 
+Anagram 3: "Leonardo da Vinci! The Mona Lisa!" "O, Draconian devil! Oh, lame saint!" 
+
+if 3 characters are removed, "cuddle" is a missing anagram of "UCD" 
+if 1 characters are removed, "duck" is a missing anagram of "UCD" 

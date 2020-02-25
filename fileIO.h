@@ -6,7 +6,10 @@
 #ifndef ANAGRAM_FILEIO_H
 #define ANAGRAM_FILEIO_H
 
-int readAnagrams(char **inputAnagrams);
+void readAnagrams(char **inputAnagrams);
 void outputSortedSentences(char **array, int lineLen);
+int getNumberOfLines();
+void outputAnagrams(char **array, int lineLen);
+void outputMissingAnagrams(char **array, int lineLen);
 
 #endif //ANAGRAM_FILEIO_H

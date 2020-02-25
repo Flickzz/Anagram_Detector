@@ -7,10 +7,9 @@
 #include <stdio.h>
 #include "stdlib.h"
 #include "utilities.h"
+#include <string.h>
 
-
-/*Returns an integer stating how close to being an anagram one sentence is to another*/
-/*If the integer is 0, they are anagrams of eachother*/
+/*Returns true if 2 sentences are anagrams of each other*/
 int isAnagram(char *sentence1, char *sentence2) {
 
     int sentence1CharacterFrequency[26] = {0};//Stores the frequency of each alphabetic character in sentence 1
@@ -31,11 +30,45 @@ int isAnagram(char *sentence1, char *sentence2) {
         }
     }
 
-    /*Counts how far they are from each other, 0 means they are anagrams of each other*/
-    int frequencyDistance = 0;
+    /*If any of the letter frequencies are different it isn't anagram and hence returns false*/
     for (int i = 0; i < 26; i++) {
-        frequencyDistance += sentence1CharacterFrequency[i] - sentence2CharacterFrequency[i];
+        if (sentence1CharacterFrequency[i] != sentence2CharacterFrequency[i]) {
+            return false;
+        }
+    }
+    /*Otherwise if all frequencies are equal, it returns true*/
+    return true;
+}
+
+/*Finds whether sentence1 is a missing anagram of sentence 2 if x characters are removed*/
+int missingAnagram(char *sentence1, char *sentence2) {
+    int sentence1CharacterFrequency[26] = {0};//Stores the frequency of each alphabetic character in sentence 1
+    int sentence2CharacterFrequency[26] = {0};//Stores the frequency of each alphabetic character in sentence 2
+
+    /*loops until one of the sentences is null and counts the frequency of each*/
+    for (int i = 0; sentence1[i] != '\0' && sentence2[i] != '\0'; i++) {
+        char currentSen1 = tolower(sentence1[i]);
+        char currentSen2 = tolower(sentence2[i]);
+        if (currentSen1 >= 'a' && currentSen1 <= 'z' && currentSen2 >= 'a' && currentSen2 <= 'z') {
+            sentence1CharacterFrequency[currentSen1 - 'a']++;
+            sentence2CharacterFrequency[currentSen2 - 'a']++;
+        }
     }
 
-    return frequencyDistance;
+    /*Sees whether the first part of each sentences are anagrams of eachother*/
+    for (int i = 0; i < 26; i++) {
+        /*If they're not anagrams of each other it returns null*/
+        if (sentence1CharacterFrequency[i] != sentence2CharacterFrequency[i]) {
+            return -1;
+        }
+    }
+
+    /*Finds how many characters are missing*/
+    int missingCharacters = strlen(sentence1) - strlen(sentence2);
+
+    if (missingCharacters > 0) {
+        return missingCharacters;
+    } else {
+        return -1;
+    }
 }

@@ -5,6 +5,7 @@ CMakeFiles/Anagram.dir/anagramSolver.c.obj: ../anagramSolver.c
 CMakeFiles/Anagram.dir/anagramSolver.c.obj: ../anagramSolver.h
 CMakeFiles/Anagram.dir/anagramSolver.c.obj: ../utilities.h
 
+CMakeFiles/Anagram.dir/fileIO.c.obj: ../anagramSolver.h
 CMakeFiles/Anagram.dir/fileIO.c.obj: ../fileIO.c
 CMakeFiles/Anagram.dir/fileIO.c.obj: ../fileIO.h
 CMakeFiles/Anagram.dir/fileIO.c.obj: ../utilities.h

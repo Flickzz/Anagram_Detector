@@ -6,16 +6,21 @@
 #include "anagramSolver.h"
 
 int main(void) {
-
-    char **anagram = (char **) calloc(MAX_LINE_LEN, sizeof(char *));
-    for (int i = 0; i < MAX_LINE_LEN; i++) {
+    int lineLen = getNumberOfLines();
+    char **anagram = (char **) calloc(lineLen, sizeof(char *));
+    for (int i = 0; i < lineLen; i++) {
         anagram[i] = (char *) calloc(MAX_SENTENCE_LEN, sizeof(char));
     }
-    int lineLen = readAnagrams(anagram);
-
+    //Reads in Anagrams
+    readAnagrams(anagram);
     /*Sorts File*/
     quickSort(anagram, 0, lineLen - 1);
     /*Outputs Sorted string to the output.txt*/
     outputSortedSentences(anagram, lineLen);
+    /*Outputs the list of Anagrams*/
+    outputAnagrams(anagram, lineLen);
+    /*Outputs the list of Missing Anagrams*/
+    outputMissingAnagrams(anagram, lineLen);
+    free(anagram);
     return 0;
 }
