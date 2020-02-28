@@ -21,7 +21,7 @@ int getNumberOfLines() {
         }
     }
     fclose(fp);
-    return lineNum;
+    return lineNum+1;
 }
 
 void readAnagrams(char **inputAnagrams) {
@@ -76,7 +76,7 @@ void outputAnagrams(char **array, int lineLen) {
                 if (isAnagram(array[i], array[j])) {
                     /*If the anagram of index i hasn't been printed yet, it'll print it*/
                     if (!visited[i]) {
-                        anagramCounter++;
+                        anagramCounter++;//Increments the number of anagrams that have been found
                         fprintf(fp, "Anagram %d: \"%s\" ", anagramCounter, array[i]);
                         visited[i] = true;
                         newLine = true;
@@ -105,6 +105,7 @@ void outputMissingAnagrams(char **array, int lineLen) {
     bool visited[lineLen];
     bool newLine = false;
 
+
     for (int i = 0; i < lineLen; i++) {
         if (!visited[i]) {
             for (int j = 0; j < lineLen; j++) {
@@ -112,7 +113,8 @@ void outputMissingAnagrams(char **array, int lineLen) {
                 if (missingCharacters > 0) {
                     if (!visited[i]) {
                         visited[i] = true;
-                        fprintf(fp, "if %d characters are removed, \"%s\" is a missing anagram of", missingCharacters, array[i]);
+                        fprintf(fp, "if %d characters are removed, \"%s\" is a missing anagram of", missingCharacters,
+                                array[i]);
                         newLine = true;
                     }
                     fprintf(fp, " \"%s\" ", array[j]);
@@ -120,7 +122,7 @@ void outputMissingAnagrams(char **array, int lineLen) {
                 }
             }
         }
-        /*Outputs a newline after every new anagram set*/
+        //Outputs a newline after every new anagram set
         if (newLine) {
             newLine = false;
             fprintf(fp, "\n");

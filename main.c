@@ -1,9 +1,7 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "fileIO.h"
 #include "utilities.h"
 #include "sortStrings.h"
-#include "anagramSolver.h"
 
 int main(void) {
     int lineLen = getNumberOfLines();
@@ -21,6 +19,7 @@ int main(void) {
     outputAnagrams(anagram, lineLen);
     /*Outputs the list of Missing Anagrams*/
     outputMissingAnagrams(anagram, lineLen);
+    /*Frees the allocated memory*/
     free(anagram);
     return 0;
 }
