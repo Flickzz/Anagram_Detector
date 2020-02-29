@@ -123,16 +123,17 @@ Anagram 27: "School master" "The classroom"
 Anagram 28: "State" "Taste" 
 Anagram 29: "The eyes" "They see" 
 
-if 6 characters are removed, "a true sign" is a missing anagram of "Rat"  "Tar" 
-if 19 characters are removed, "care is noted saintliness" is a missing anagram of "Arc"  "Car"  "considerate" 
-if 9 characters are removed, "dirty room signature" is a missing anagram of "Dirty room"  "Dormitory"  "dormitory" 
-if 15 characters are removed, "grand old evils the nudist colony" is a missing anagram of "gold and silver" 
-if 1 characters are removed, "Here comes dots" is a missing anagram of "here come dots"  "The Morse Code" 
-if 10 characters are removed, "is a lane restaurant" is a missing anagram of "an aisle" 
-if 11 characters are removed, "I’m a dot in place monasteries" is a missing anagram of "a decimal point" 
-if 12 characters are removed, "joyful fourth the Morse Code" is a missing anagram of "Fourth of July"  "Joyful Fourth" 
-if 15 characters are removed, "may it end Statue of Liberty" is a missing anagram of "dynamite" 
-if 12 characters are removed, "name for ship the tennis pro" is a missing anagram of "HMS Pinafore" 
-if 13 characters are removed, "slick rime Valentine poem" is a missing anagram of "limericks" 
-if 14 characters are removed, "twelve plus one the earthquakes" is a missing anagram of "Eleven plus two"  "eleven plus two"  "Twelve plus one" 
-if 8 characters are removed, "voices rant on Semolina" is a missing anagram of "Conversation"  "conversation"  "Voices rant on" 
+"a true sign" is a missing anagram of "Rat" "Tar" if 6 characters are removed
+"care is noted saintliness" is a missing anagram of "Arc" "Car" if 19 characters are removed
+"care is noted saintliness" is a missing anagram of "considerate" if 11 characters are removed
+"dirty room signature" is a missing anagram of "Dirty room" "Dormitory" "dormitory" if 9 characters are removed
+"grand old evils the nudist colony" is a missing anagram of "gold and silver" if 15 characters are removed
+"Here comes dots" is a missing anagram of "here come dots" "The Morse Code" if 1 characters are removed
+"is a lane restaurant" is a missing anagram of "an aisle" if 10 characters are removed
+"I’m a dot in place monasteries" is a missing anagram of "a decimal point" if 11 characters are removed
+"joyful fourth the Morse Code" is a missing anagram of "Fourth of July" "Joyful Fourth" if 12 characters are removed
+"may it end Statue of Liberty" is a missing anagram of "dynamite" if 15 characters are removed
+"name for ship the tennis pro" is a missing anagram of "HMS Pinafore" if 12 characters are removed
+"slick rime Valentine poem" is a missing anagram of "limericks" if 13 characters are removed
+"twelve plus one the earthquakes" is a missing anagram of "Eleven plus two" "eleven plus two" "Twelve plus one" if 14 characters are removed
+"voices rant on Semolina" is a missing anagram of "Conversation" "conversation" "Voices rant on" if 8 characters are removed

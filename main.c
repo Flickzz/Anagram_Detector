@@ -19,7 +19,13 @@ int main(void) {
     outputAnagrams(anagram, lineLen);
     /*Outputs the list of Missing Anagrams*/
     outputMissingAnagrams(anagram, lineLen);
+
     /*Frees the allocated memory*/
+    for(int i = 0; i< lineLen; i++)
+    {
+        free(anagram[i]);
+    }
     free(anagram);
+
     return 0;
 }

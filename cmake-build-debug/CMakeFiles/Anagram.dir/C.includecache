@@ -7,11 +7,11 @@
 #IncludeRegexTransform: 
 
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h
+stdbool.h
+-
 
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c
 stdio.h
--
-stdbool.h
 -
 fileIO.h
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h

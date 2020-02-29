@@ -2,7 +2,6 @@
 // Created by Ashraf Ali on 02/02/2020.
 //
 #include <stdio.h>
-#include <stdbool.h>
 #include "fileIO.h"
 #include "utilities.h"
 #include "anagramSolver.h"
@@ -21,7 +20,7 @@ int getNumberOfLines() {
         }
     }
     fclose(fp);
-    return lineNum+1;
+    return lineNum + 1;
 }
 
 void readAnagrams(char **inputAnagrams) {
@@ -102,31 +101,41 @@ void outputMissingAnagrams(char **array, int lineLen) {
     if (!fp) {
         perror("Error outputing file");
     }
-    bool visited[lineLen];
-    bool newLine = false;
-
 
     for (int i = 0; i < lineLen; i++) {
-        if (!visited[i]) {
-            for (int j = 0; j < lineLen; j++) {
-                int missingCharacters = missingAnagram(array[i], array[j]);
-                if (missingCharacters > 0) {
-                    if (!visited[i]) {
-                        visited[i] = true;
-                        fprintf(fp, "if %d characters are removed, \"%s\" is a missing anagram of", missingCharacters,
-                                array[i]);
-                        newLine = true;
-                    }
-                    fprintf(fp, " \"%s\" ", array[j]);
+        bool newLine = false;
+
+        bool visited[lineLen];
+        for (int j = 0; j < lineLen; j++) {
+            visited[j] = false;
+        }
+
+        for (int j = 0; j < lineLen; j++) {
+            if (!visited[j]) {
+                int missingChar = missingAnagram(array[i], array[j]);
+                if (missingChar > 0) {
+                    newLine = true;
+                    fprintf(fp, "\"%s\" is a missing anagram of \"%s\"", array[i],
+                            array[j]);
                     visited[j] = true;
+                    for (int k = 0; k < lineLen; k++) {
+                        if (j != k && isAnagram(array[j], array[k])) {
+                            fprintf(fp, " \"%s\"", array[k]);
+                            visited[k] = true;
+                        }
+                    }
+                    fprintf(fp, " if %d characters are removed", missingChar);
                 }
             }
-        }
-        //Outputs a newline after every new anagram set
-        if (newLine) {
-            newLine = false;
-            fprintf(fp, "\n");
+            if (newLine) {
+                newLine = false;
+                fprintf(fp, "\n");
+            }
         }
     }
+    //int something = missingAnagram(array[4],array[13]);
+    //printf("%d", something);
+
+
     fclose(fp);
 }
