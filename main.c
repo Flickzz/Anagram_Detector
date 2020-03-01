@@ -10,7 +10,7 @@ int main(void) {
         anagram[i] = (char *) calloc(MAX_SENTENCE_LEN, sizeof(char));
     }
     //Reads in Anagrams
-    readAnagrams(anagram);
+    readAnagrams(anagram, lineLen);
     /*Sorts File*/
     quickSort(anagram, 0, lineLen - 1);
     /*Outputs Sorted string to the output.txt*/

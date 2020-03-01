@@ -5,6 +5,7 @@
 #include "fileIO.h"
 #include "utilities.h"
 #include "anagramSolver.h"
+#include <stdlib.h>
 
 const char *INPUT_TEXT_FILE = "../input.txt";
 const char *OUTPUT_TEXT_FILE = "../output.txt";
@@ -23,7 +24,7 @@ int getNumberOfLines() {
     return lineNum + 1;
 }
 
-void readAnagrams(char **inputAnagrams) {
+void readAnagrams(char **inputAnagrams, int lineLen) {
     FILE *fp = fopen(INPUT_TEXT_FILE, "r+");
     int lineNumber = 0;
     if (!fp) {
@@ -31,6 +32,8 @@ void readAnagrams(char **inputAnagrams) {
     } else {
         while (fgets(inputAnagrams[lineNumber], MAX_SENTENCE_LEN, fp)) {
             lineNumber++;
+            if(lineNumber == lineLen)
+                break;
         }
     }
     for (int i = 0; i < lineNumber; i++) {
@@ -40,6 +43,7 @@ void readAnagrams(char **inputAnagrams) {
             }
         }
     }
+    fclose(fp);
 }
 
 void outputSortedSentences(char **array, int lineLen) {
@@ -63,7 +67,12 @@ void outputAnagrams(char **array, int lineLen) {
     if (!fp) {
         perror("Error outputing to file");
     }
+    /*
     bool visited[lineLen];
+    for (int i = 0; i < lineLen; i++)
+        visited[i] = false;*/
+    bool *visited = (bool *) calloc(lineLen, sizeof(bool));
+
 
     int anagramCounter = 0;//Stores how many anagrams have been outputed
     bool newLine = false;
@@ -105,10 +114,7 @@ void outputMissingAnagrams(char **array, int lineLen) {
     for (int i = 0; i < lineLen; i++) {
         bool newLine = false;
 
-        bool visited[lineLen];
-        for (int j = 0; j < lineLen; j++) {
-            visited[j] = false;
-        }
+        bool *visited = (bool *) calloc(lineLen, sizeof(bool));
 
         for (int j = 0; j < lineLen; j++) {
             if (!visited[j]) {
