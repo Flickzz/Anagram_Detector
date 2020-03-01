@@ -32,7 +32,7 @@ void readAnagrams(char **inputAnagrams, int lineLen) {
     } else {
         while (fgets(inputAnagrams[lineNumber], MAX_SENTENCE_LEN, fp)) {
             lineNumber++;
-            if(lineNumber == lineLen)
+            if (lineNumber == lineLen)
                 break;
         }
     }
@@ -101,6 +101,7 @@ void outputAnagrams(char **array, int lineLen) {
             }
         }
     }
+    free(visited);
     fprintf(fp, "\n");
     fclose(fp);
 }
@@ -138,6 +139,7 @@ void outputMissingAnagrams(char **array, int lineLen) {
                 fprintf(fp, "\n");
             }
         }
+        free(visited);
     }
     //int something = missingAnagram(array[4],array[13]);
     //printf("%d", something);
