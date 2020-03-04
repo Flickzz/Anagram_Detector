@@ -12,7 +12,6 @@ const char *OUTPUT_TEXT_FILE = "../output.txt";
 
 /*Reads the length of the input file*/
 int getNumberOfLines() {
-    //Careful of /n different on different computers
     FILE *fp = fopen(INPUT_TEXT_FILE, "r");
     int lineNum = 0;
     for (int c = getc(fp); c != EOF; c = getc(fp)) {
@@ -67,12 +66,8 @@ void outputAnagrams(char **array, int lineLen) {
     if (!fp) {
         perror("Error outputing to file");
     }
-    /*
-    bool visited[lineLen];
-    for (int i = 0; i < lineLen; i++)
-        visited[i] = false;*/
-    bool *visited = (bool *) calloc(lineLen, sizeof(bool));
 
+    bool *visited = (bool *) calloc(lineLen, sizeof(bool));
 
     int anagramCounter = 0;//Stores how many anagrams have been outputed
     bool newLine = false;
@@ -141,8 +136,6 @@ void outputMissingAnagrams(char **array, int lineLen) {
         }
         free(visited);
     }
-    //int something = missingAnagram(array[4],array[13]);
-    //printf("%d", something);
 
 
     fclose(fp);
