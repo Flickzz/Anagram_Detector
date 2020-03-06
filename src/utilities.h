@@ -5,7 +5,7 @@
 #ifndef ANAGRAM_UTILITIES_H
 #define ANAGRAM_UTILITIES_H
 
-#define MAX_LINE_LEN  50
+//Universal declaration of our max string length
 #define MAX_SENTENCE_LEN  80
 
 #endif //ANAGRAM_UTILITIES_H

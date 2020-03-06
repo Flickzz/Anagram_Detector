@@ -55,8 +55,9 @@ int missingAnagram(char *sentence1, char *sentence2) {
             charactersInSentence2++;
         }
     }
-    /*If they're equal length, they can't be missing anagrams of each other*/
-    if (charactersInSentence1 == charactersInSentence2) {
+
+    /*If they're equal length, sentence 2 is shorter than sentence 2 or they have no characters - they can't be missing anagrams of each other*/
+    if (charactersInSentence1 <= charactersInSentence2 || charactersInSentence2 == 0) {
         return -1;
     }
 
@@ -71,6 +72,7 @@ int missingAnagram(char *sentence1, char *sentence2) {
             if (sentence1[i] == '\0')
                 break;
         }
+        /*Adds each alphabetic character to the frequency array*/
         if (tolower(sentence1[i]) >= 'a' && tolower(sentence1[i]) <= 'z') {
             sentence1CharacterFrequency[tolower(sentence1[i]) - 'a']++;
         }
@@ -80,17 +82,19 @@ int missingAnagram(char *sentence1, char *sentence2) {
             if (sentence2[j] == '\0')
                 break;
         }
+        /*Adds each alphabetic character to the frequency array*/
         if (tolower(sentence2[j]) >= 'a' && tolower(sentence2[j]) <= 'z') {
             sentence2CharacterFrequency[tolower(sentence2[j]) - 'a']++;
         }
     }
+
     /*Checks if they're actually missing anagrams*/
     for (int i = 0; i < 26; i++) {
         if (sentence1CharacterFrequency[i] != sentence2CharacterFrequency[i]) {
             return -1;
         }
     }
-    int missingCharacters = charactersInSentence1 - charactersInSentence2;
 
-    return missingCharacters;
+    /*Returns the number of characters needed to be removed from sentence 1 to qualify as a missing anagram*/
+    return charactersInSentence1 - charactersInSentence2;
 }

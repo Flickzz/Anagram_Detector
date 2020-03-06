@@ -6,25 +6,51 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.c
+anagramSolver.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.h
+ctype.h
+-
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.h
 stdbool.h
 -
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.c
 stdio.h
 -
 fileIO.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.h
 utilities.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/utilities.h
 anagramSolver.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.h
 stdlib.h
 -
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.h
 utilities.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/utilities.h
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/main.c
+stdlib.h
+-
+fileIO.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.h
+utilities.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/utilities.h
+sortStrings.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.c
+string.h
+-
+sortStrings.h
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h
+stdlib.h
+-
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h
+
+C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/utilities.h
 

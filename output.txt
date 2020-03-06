@@ -1,23 +1,139 @@
 The sorted list of strings is as follows:
+a decimal point
+A gentleman
+a near miss
+a true sign
+a year to shut down
 Act
-cat
-Computer science
-cuddle
-duck
-Hey there!
-I am Lord Voldemort
-Leonardo da Vinci! The Mona Lisa!
-O, Draconian devil! Oh, lame saint!
-Old Immortal dovers
-Software engineering
-tac
-Tom Marvolo Riddle
-UCD
+Amen stories
+an air miss old England
+an aisle
+Angel
+Arc
+Astronomer
+Below
+Bored
+Brag
+built to stay free
+Car
+care is noted saintliness
+Cash lost in me
+Cat
+Chin
+Cider
+considerate
+Conversation
+conversation
+Cried
+departed this life
+Desserts
+Dirty room
+dirty room signature
+Dormitory
+dormitory
+Dusty
+dynamite
+Elbow
+Elegant man
+Eleven plus two
+eleven plus two
+Fourth of July
+Funeral
+Glean
+gold and silver
+golden land
+Grab
+grand old evils the nudist colony
+he in net sport
+here come dots
+Here comes dots
+He’s left it, dead; RIP
+HMS Pinafore
+Inch
+is a lane restaurant
+is no meal
+I’m a dot in place monasteries
+Joyful Fourth
+joyful fourth the Morse Code
+large picture halls, I bet
+least in sins
+limericks
+Listen
+may it end Statue of Liberty
+Moon starer
+name for ship the tennis pro
+Night
+no untidy clothes
+pen mate in love
+Rat
+Real fun
+Robed
+runs a treat
+Save
+School master
+Silent
+slick rime Valentine poem
+Slot machines
+State
+Stressed
+Study
+Tar
+Taste
+that queer shake
+The classroom
+The eyes
+The Morse Code
+the public art galleries
+They see
+Thing
+Twelve plus one
+twelve plus one the earthquakes
+Vase
+Voices rant on
+voices rant on Semolina
+year two thousand
 
-Anagram 1: "Act" "cat" "tac" 
-Anagram 2: "I am Lord Voldemort" "Tom Marvolo Riddle" 
-Anagram 3: "Leonardo da Vinci! The Mona Lisa!" "O, Draconian devil! Oh, lame saint!" 
+Anagram 1: "A gentleman" "Elegant man" 
+Anagram 2: "a year to shut down" "year two thousand" 
+Anagram 3: "Act" "Cat" 
+Anagram 4: "Angel" "Glean" 
+Anagram 5: "Arc" "Car" 
+Anagram 6: "Astronomer" "Moon starer" 
+Anagram 7: "Below" "Elbow" 
+Anagram 8: "Bored" "Robed" 
+Anagram 9: "Brag" "Grab" 
+Anagram 10: "Cash lost in me" "Slot machines" 
+Anagram 11: "Chin" "Inch" 
+Anagram 12: "Cider" "Cried" 
+Anagram 13: "Conversation" "conversation" "Voices rant on" 
+Anagram 14: "departed this life" "He’s left it, dead; RIP" 
+Anagram 15: "Desserts" "Stressed" 
+Anagram 16: "Dirty room" "Dormitory" "dormitory" 
+Anagram 17: "Dusty" "Study" 
+Anagram 18: "Eleven plus two" "eleven plus two" "Twelve plus one" 
+Anagram 19: "Fourth of July" "Joyful Fourth" 
+Anagram 20: "Funeral" "Real fun" 
+Anagram 21: "here come dots" "The Morse Code" 
+Anagram 22: "large picture halls, I bet" "the public art galleries" 
+Anagram 23: "Listen" "Silent" 
+Anagram 24: "Night" "Thing" 
+Anagram 25: "Rat" "Tar" 
+Anagram 26: "Save" "Vase" 
+Anagram 27: "School master" "The classroom" 
+Anagram 28: "State" "Taste" 
+Anagram 29: "The eyes" "They see" 
 
-"cuddle" is a missing anagram of "UCD" if 3 characters are removed
-"duck" is a missing anagram of "UCD" if 1 characters are removed
-"Old Immortal dovers" is a missing anagram of "I am Lord Voldemort" "Tom Marvolo Riddle" if 1 characters are removed
+"a true sign" is a missing anagram of "Rat" "Tar" if 6 characters are removed
+"care is noted saintliness" is a missing anagram of "Arc" "Car" if 19 characters are removed
+"care is noted saintliness" is a missing anagram of "considerate" if 11 characters are removed
+"dirty room signature" is a missing anagram of "Dirty room" "Dormitory" "dormitory" if 9 characters are removed
+"grand old evils the nudist colony" is a missing anagram of "gold and silver" if 15 characters are removed
+"Here comes dots" is a missing anagram of "here come dots" "The Morse Code" if 1 characters are removed
+"is a lane restaurant" is a missing anagram of "an aisle" if 10 characters are removed
+"I’m a dot in place monasteries" is a missing anagram of "a decimal point" if 11 characters are removed
+"joyful fourth the Morse Code" is a missing anagram of "Fourth of July" "Joyful Fourth" if 12 characters are removed
+"may it end Statue of Liberty" is a missing anagram of "dynamite" if 15 characters are removed
+"name for ship the tennis pro" is a missing anagram of "HMS Pinafore" if 12 characters are removed
+"slick rime Valentine poem" is a missing anagram of "limericks" if 13 characters are removed
+"twelve plus one the earthquakes" is a missing anagram of "Eleven plus two" "eleven plus two" "Twelve plus one" if 14 characters are removed
+"voices rant on Semolina" is a missing anagram of "Conversation" "conversation" "Voices rant on" if 8 characters are removed

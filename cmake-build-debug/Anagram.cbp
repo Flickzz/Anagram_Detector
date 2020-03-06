@@ -74,28 +74,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.c">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.c">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.h">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.h">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.c">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.h">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.h">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/main.c">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/main.c">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.c">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.c">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.h">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h">
 			<Option target="Anagram"/>
 		</Unit>
-		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/utilities.h">
+		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/utilities.h">
 			<Option target="Anagram"/>
 		</Unit>
 		<Unit filename="C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/CMakeLists.txt">

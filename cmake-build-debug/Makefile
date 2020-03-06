@@ -122,113 +122,113 @@ Anagram/fast:
 	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/build
 .PHONY : Anagram/fast
 
-anagramSolver.obj: anagramSolver.c.obj
+src/anagramSolver.obj: src/anagramSolver.c.obj
 
-.PHONY : anagramSolver.obj
-
-# target to build an object file
-anagramSolver.c.obj:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/anagramSolver.c.obj
-.PHONY : anagramSolver.c.obj
-
-anagramSolver.i: anagramSolver.c.i
-
-.PHONY : anagramSolver.i
-
-# target to preprocess a source file
-anagramSolver.c.i:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/anagramSolver.c.i
-.PHONY : anagramSolver.c.i
-
-anagramSolver.s: anagramSolver.c.s
-
-.PHONY : anagramSolver.s
-
-# target to generate assembly for a file
-anagramSolver.c.s:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/anagramSolver.c.s
-.PHONY : anagramSolver.c.s
-
-fileIO.obj: fileIO.c.obj
-
-.PHONY : fileIO.obj
+.PHONY : src/anagramSolver.obj
 
 # target to build an object file
-fileIO.c.obj:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/fileIO.c.obj
-.PHONY : fileIO.c.obj
+src/anagramSolver.c.obj:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/anagramSolver.c.obj
+.PHONY : src/anagramSolver.c.obj
 
-fileIO.i: fileIO.c.i
+src/anagramSolver.i: src/anagramSolver.c.i
 
-.PHONY : fileIO.i
+.PHONY : src/anagramSolver.i
 
 # target to preprocess a source file
-fileIO.c.i:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/fileIO.c.i
-.PHONY : fileIO.c.i
+src/anagramSolver.c.i:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/anagramSolver.c.i
+.PHONY : src/anagramSolver.c.i
 
-fileIO.s: fileIO.c.s
+src/anagramSolver.s: src/anagramSolver.c.s
 
-.PHONY : fileIO.s
+.PHONY : src/anagramSolver.s
 
 # target to generate assembly for a file
-fileIO.c.s:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/fileIO.c.s
-.PHONY : fileIO.c.s
+src/anagramSolver.c.s:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/anagramSolver.c.s
+.PHONY : src/anagramSolver.c.s
 
-main.obj: main.c.obj
+src/fileIO.obj: src/fileIO.c.obj
 
-.PHONY : main.obj
+.PHONY : src/fileIO.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/main.c.obj
-.PHONY : main.c.obj
+src/fileIO.c.obj:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/fileIO.c.obj
+.PHONY : src/fileIO.c.obj
 
-main.i: main.c.i
+src/fileIO.i: src/fileIO.c.i
 
-.PHONY : main.i
+.PHONY : src/fileIO.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/main.c.i
-.PHONY : main.c.i
+src/fileIO.c.i:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/fileIO.c.i
+.PHONY : src/fileIO.c.i
 
-main.s: main.c.s
+src/fileIO.s: src/fileIO.c.s
 
-.PHONY : main.s
+.PHONY : src/fileIO.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/main.c.s
-.PHONY : main.c.s
+src/fileIO.c.s:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/fileIO.c.s
+.PHONY : src/fileIO.c.s
 
-sortStrings.obj: sortStrings.c.obj
+src/main.obj: src/main.c.obj
 
-.PHONY : sortStrings.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-sortStrings.c.obj:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/sortStrings.c.obj
-.PHONY : sortStrings.c.obj
+src/main.c.obj:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/main.c.obj
+.PHONY : src/main.c.obj
 
-sortStrings.i: sortStrings.c.i
+src/main.i: src/main.c.i
 
-.PHONY : sortStrings.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-sortStrings.c.i:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/sortStrings.c.i
-.PHONY : sortStrings.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-sortStrings.s: sortStrings.c.s
+src/main.s: src/main.c.s
 
-.PHONY : sortStrings.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-sortStrings.c.s:
-	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/sortStrings.c.s
-.PHONY : sortStrings.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/sortStrings.obj: src/sortStrings.c.obj
+
+.PHONY : src/sortStrings.obj
+
+# target to build an object file
+src/sortStrings.c.obj:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/sortStrings.c.obj
+.PHONY : src/sortStrings.c.obj
+
+src/sortStrings.i: src/sortStrings.c.i
+
+.PHONY : src/sortStrings.i
+
+# target to preprocess a source file
+src/sortStrings.c.i:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/sortStrings.c.i
+.PHONY : src/sortStrings.c.i
+
+src/sortStrings.s: src/sortStrings.c.s
+
+.PHONY : src/sortStrings.s
+
+# target to generate assembly for a file
+src/sortStrings.c.s:
+	$(MAKE) -f CMakeFiles\Anagram.dir\build.make CMakeFiles/Anagram.dir/src/sortStrings.c.s
+.PHONY : src/sortStrings.c.s
 
 # Help Target
 help:
@@ -239,18 +239,18 @@ help:
 	@echo ... Anagram
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... anagramSolver.obj
-	@echo ... anagramSolver.i
-	@echo ... anagramSolver.s
-	@echo ... fileIO.obj
-	@echo ... fileIO.i
-	@echo ... fileIO.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... sortStrings.obj
-	@echo ... sortStrings.i
-	@echo ... sortStrings.s
+	@echo ... src/anagramSolver.obj
+	@echo ... src/anagramSolver.i
+	@echo ... src/anagramSolver.s
+	@echo ... src/fileIO.obj
+	@echo ... src/fileIO.i
+	@echo ... src/fileIO.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/sortStrings.obj
+	@echo ... src/sortStrings.i
+	@echo ... src/sortStrings.s
 .PHONY : help
 
 

@@ -9,6 +9,7 @@ void swap(char **array, int i, int j) {
     array[j] = temp;
 }
 
+/*A custom function that takes two strings, makes them lowercase, and then uses strcmp*/
 int compare(char *sentence1, char *sentence2) {
     //Copies the sentences onto a character array that we can make lowercase
     char *sentence1_lowercase = malloc((strlen(sentence1) + 1) * sizeof(char));
@@ -29,7 +30,7 @@ int compare(char *sentence1, char *sentence2) {
     }
     //Compare strings in their lower character form
     int comparison = strcmp(sentence1_lowercase, sentence2_lowercase);
-    //Free Memory
+    //Frees Memory
     free(sentence1_lowercase);
     free(sentence2_lowercase);
     return comparison;
@@ -57,13 +58,13 @@ int partition(char **array, int first, int last) {
     return index2;
 }
 
-
-void quickSort(char **array, int first, int last) {
+/*Sorts a list of strings alphabetically*/
+void quickSort(char **arrayOfStrings, int first, int last) {
 
     //if the size of the array is equal to 0 or 1, the array is sorted by definition
     if (first < last) {
-        int pivotIndex = partition(array, first, last);
-        quickSort(array, first, pivotIndex - 1);
-        quickSort(array, pivotIndex + 1, last);
+        int pivotIndex = partition(arrayOfStrings, first, last);
+        quickSort(arrayOfStrings, first, pivotIndex - 1);
+        quickSort(arrayOfStrings, pivotIndex + 1, last);
     }
 }

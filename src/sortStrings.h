@@ -5,5 +5,7 @@
 #ifndef ANAGRAM_SORTSTRINGS_H
 #define ANAGRAM_SORTSTRINGS_H
 
-void quickSort(char **array, int first, int last);
+/*Sorts a list of strings with quicksort*/
+void quickSort(char **arrayOfStrings, int first, int last);
+
 #endif //ANAGRAM_SORTSTRINGS_H

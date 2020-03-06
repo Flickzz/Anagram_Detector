@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/anagramSolver.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/anagramSolver.c.obj"
-  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/fileIO.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/fileIO.c.obj"
-  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/main.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/main.c.obj"
-  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/sortStrings.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/sortStrings.c.obj"
+  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/src/anagramSolver.c.obj"
+  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/fileIO.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/src/fileIO.c.obj"
+  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/main.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/src/main.c.obj"
+  "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.c" "C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir/src/sortStrings.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
