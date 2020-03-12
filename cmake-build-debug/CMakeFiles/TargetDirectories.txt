@@ -1,3 +1,0 @@
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/Anagram.dir
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/cmake-build-debug/CMakeFiles/rebuild_cache.dir
