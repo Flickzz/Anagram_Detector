@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.c
-anagramSolver.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.h
-ctype.h
--
-
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/anagramSolver.h
 stdbool.h
 -
@@ -41,14 +35,6 @@ utilities.h
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/utilities.h
 sortStrings.h
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h
-
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.c
-string.h
--
-sortStrings.h
-C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h
-stdlib.h
--
 
 C:/Users/Ashraf Ali/Desktop/ComputerScience/SoftwareEngineering/Anagram/src/sortStrings.h
 
